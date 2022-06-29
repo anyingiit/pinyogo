@@ -1,0 +1,120 @@
+/* 通用样式组件 */
+
+.shortcut {
+    height: 31px;
+    width: 100%;
+    line-height: 31px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+}
+
+.shortcut li {
+    float: left;
+    display: inline-flex;
+    align-items: center;
+}
+
+.shortcut li .icon-ctrl1 {
+    font-size: 16px;
+}
+
+.spacer {
+    width: 1px;
+    height: 12px;
+    margin: 9px 12px 0 12px;
+    background-color: #666666;
+}
+
+.header {
+    height: 106px;
+    /*background-color: #449fdb;*/
+    position: relative;
+}
+
+.logo {
+    width: 179px;
+    height: 55px;
+    /*background-color: #c40000;*/
+    position: absolute;
+    top: 27px;
+}
+
+.logo a {
+    display: block;
+    width: 179px;
+    height: 55px;
+    background: url("../imgs/logo.png") no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    top: 27px;
+    left: 347px;
+}
+
+.search input {
+    width: 455px;
+    height: 32px;
+    text-indent: 13px;
+    border: 2px #b1191a solid;
+    float: left;
+}
+
+.search button {
+    width: 82px;
+    height: 36px;
+    background-color: #b1191a;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.hot-words {
+    position: absolute;
+    left: 359px;
+    top: 70px;
+    font-size: 12px;
+}
+
+.hot-words a {
+    margin: 0 12px;
+}
+
+.shopping-card {
+    position: absolute;
+    top: 27px;
+    right: 64px;
+    width: 138px;
+    height: 34px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+}
+
+.shopping-card .icon-cart {
+    color: #e07878;
+    margin-right: 2px;
+}
+
+.shopping-card .icon-ctrl2 {
+    color: #d1d1d1;
+    margin-left: 12px;
+}
+
+.shopping-card .count {
+    position: absolute;
+    bottom: 25px;
+    left: 104px;
+    background-color: #e60012;
+    height: 14px;
+    line-height: 13px;
+    color: white;
+    border-radius: 7px 7px 7px 0;
+    padding: 0 3px;
+}

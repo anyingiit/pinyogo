@@ -1,0 +1,61 @@
+/* 基本样式 */
+@import url('./icomoon.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    font-style: normal;
+}
+
+a:hover {
+    color: #c40000;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: 0;
+}
+
+.font-red {
+    color: #c40000;
+}
+
+.font-black {
+    color: black;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.display-none {
+    display: none;
+}

@@ -1,3 +1,4 @@
+/* icoMoon字体支持css */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?87rynl');
@@ -46,3 +47,17 @@
 .icon-bubbles:before {
   content: "\e96c";
 }
+.icon-ctrl:before {
+  content: "\ea50";
+}
+.icon-ctrl1:before {
+  content: "\ea51";
+}
+.icon-ctrl2:before {
+  content: "\ea52";
+}
+.icon-ctrl3:before {
+  content: "\ea53";
+}
+
+
