@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/icomoon.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="js/react.development.js"></script>
+<script src="js/react-dom.development.js"></script>
+<script src="js/babel.min.js"></script>
+
+<script type="text/babel">
+    class Index extends React.Component{
+      render(){
+        return(
+          <div>
+            <div>hello world</div>
+            {/* style属性接收一个对象, 所以要在表达式内写入一个对象 */}
+            <div className="icon-cart" style={{fontSize:"50px"}}></div>
+          </div>
+        )
+      }
+    }
+
+    ReactDOM.render(<Index/>, document.getElementById('root'))
+</script>
+
+</body>
+</html>
