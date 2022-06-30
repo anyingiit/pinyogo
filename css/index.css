@@ -394,3 +394,292 @@
     justify-content: center;
     margin-top: 10px;
 }
+
+.funny {
+    height: 433px;
+    margin-top: 30px;
+}
+
+.funny .title {
+    height: 27px;
+}
+
+.funny .title .left {
+    font-size: 18px;
+}
+
+.funny .container {
+    height: 406px;
+    /*background-color: aquamarine;*/
+    box-sizing: border-box;
+    border: 1px #e1e3ee;
+    border-style: solid none solid none;
+}
+
+.funny .container .a, .funny .container .b, .funny .container .c, .funny .container .d {
+    height: 100%;
+    float: left;
+}
+
+.funny .container .a {
+    width: 404px;
+    background: url("../upload/interest01.png") no-repeat;
+}
+
+.funny .container .b {
+    width: 227px;
+    box-sizing: border-box;
+    border: 1px #f6f6f6;
+    border-style: none solid none none;
+    display: flex;
+    flex-direction: column;
+}
+
+.funny .container .b .box {
+    width: 191px;
+    height: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px #f6f6f6;
+    border-style: none none dashed none;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+
+.funny .container .b .pics {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.funny .container .b .pics .pic1, .funny .container .b .pics .pic2 {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.funny .container .b .pics .pic1 {
+    background-image: url("../upload/interest02.png");
+    height: 206px;
+}
+
+.funny .container .b .pics .pic2 {
+    background-image: url("../upload/interest03.png"); /* TODO: 图有问题, 少1px */
+    height: 158px;
+}
+
+.funny .container .c {
+    width: 406px;
+    box-sizing: border-box;
+    border: 1px #ededed;
+    border-style: none solid none none;
+    background-color: #f7f7f7;
+}
+
+.funny .container .c .box {
+    width: 366px;
+    margin: 0 auto;
+    border: 1px #ededed;
+    box-sizing: border-box;
+    border-style: none none dashed none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+
+.funny .container .c .pics {
+}
+
+.funny .container .c .pics .top {
+    width: 100%;
+    height: 206px;
+    background: url("../upload/interest04.png") no-repeat; /* TODO: 图有问题, 少1px */
+    box-sizing: border-box;
+    border: 1px #ededed;
+    border-style: none none solid none;
+}
+
+.funny .container .c .pics .bottom {
+    height: 160px;
+    width: 100%;
+}
+
+.funny .container .c .pics .bottom .left {
+    width: 202px;
+    height: 100%;
+    float: left;
+    background: url("../upload/interest05.png") no-repeat;
+}
+
+.funny .container .c .pics .bottom .right {
+    width: 203px;
+    height: 100%;
+    float: left;
+    background: url("../upload/interest06.png") no-repeat;
+}
+
+.funny .container .d {
+    width: 163px;
+    box-sizing: border-box;
+    border: 1px #f6f6f6;
+    border-style: none solid none none;
+    padding: 13px 0 0 7px;
+}
+
+.funny .container .d ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.funny .container .d ul li {
+    height: calc(391px / 7);
+    line-height: calc(391px / 7);
+    /*height: 36px;*/
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px #f6f6f6;
+    border-style: none none dashed none;
+    overflow: hidden;
+    display: flex;
+    background: none;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.funny .container .d ul .a {
+    border-style: none dashed dashed none;
+}
+
+.funny .container .d ul .b {
+}
+
+.funny .container .d ul .c {
+    border-style: none dashed dashed none;
+
+}
+
+.funny .container .d ul .d {
+}
+
+.funny .container .d ul .e {
+    border-style: none dashed dashed none;
+
+}
+
+.funny .container .d ul .f {
+}
+
+.funny .container .d ul .g {
+    border-style: none dashed dashed none;
+
+}
+
+.funny .container .d ul .h {
+}
+
+.funny .container .d ul .i {
+    border-style: none dashed dashed none;
+
+}
+
+.funny .container .d ul .j {
+}
+
+.funny .container .d ul .k {
+    border-style: none dashed dashed none;
+
+}
+
+.funny .container .d ul .l {
+
+}
+
+.funny .container .d ul .m {
+    border-style: none dashed none none;
+}
+
+.funny .container .d ul .n {
+    border-style: none none none none;
+}
+
+.funny .container .d ul .pic {
+    width: 80px;
+    height: 36px;
+}
+
+.funny .container .d ul .a .pic {
+    background: url("../upload/brand01.png") no-repeat;
+}
+
+.funny .container .d ul .b .pic {
+    background: url("../upload/brand02.png") no-repeat;
+
+}
+
+.funny .container .d ul .c .pic {
+    background: url("../upload/brand03.png") no-repeat;
+
+
+}
+
+.funny .container .d ul .d .pic {
+    background: url("../upload/brand04.png") no-repeat;
+
+}
+
+.funny .container .d ul .e .pic {
+    background: url("../upload/brand05.png") no-repeat;
+}
+
+.funny .container .d ul .f .pic {
+    background: url("../upload/brand06.png") no-repeat;
+
+}
+
+.funny .container .d ul .g .pic {
+    background: url("../upload/brand07.png") no-repeat;
+
+
+}
+
+.funny .container .d ul .h .pic {
+    background: url("../upload/brand08.png") no-repeat;
+
+}
+
+.funny .container .d ul .i .pic {
+    background: url("../upload/brand09.png") no-repeat;
+
+
+}
+
+.funny .container .d ul .j .pic {
+    background: url("../upload/brand10.png") no-repeat;
+
+}
+
+.funny .container .d ul .k .pic {
+    background: url("../upload/brand11.png") no-repeat;
+
+
+}
+
+.funny .container .d ul .l .pic {
+    background: url("../upload/brand12.png") no-repeat;
+
+
+}
+
+.funny .container .d ul .m .pic {
+    background: url("../upload/brand13.png") no-repeat;
+
+}
+
+.funny .container .d ul .n .pic {
+    background: url("../upload/brand14.png") no-repeat;
+
+}
