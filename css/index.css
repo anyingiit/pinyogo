@@ -1,0 +1,223 @@
+.main {
+    height: 455px;
+    width: 980px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    width: 720px;
+    float: left;
+    background-color: #449fdb;
+    height: 100%;
+    position: relative;
+}
+
+.focus ol {
+    position: absolute;
+    bottom: 28px;
+    left: 72px;
+}
+
+.focus ol li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(245 245 245 / 35%);;
+}
+
+.focus ol .select {
+    background-color: white;
+}
+
+.focus .left, .focus .right {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #272a2c4d;
+    color: white;
+}
+
+.focus .left {
+    left: 0;
+}
+
+.focus .right {
+    right: 0;
+}
+
+
+.newsflash {
+    margin-top: 1px;
+    width: 250px;
+    height: 100%;
+    float: right;
+    /*background-color: blueviolet;*/
+}
+
+.newsflash .a {
+    width: 248px;
+    height: 163px;
+    border: 1px #f6f6f6;
+    border-style: solid solid none solid;
+}
+
+.newsflash .a .title {
+    height: 32px;
+    /*background-color: #449fdb;*/
+    border: 1px #fcfcfc;
+    border-style: none none dashed none;
+    color: #cccccc;
+    padding: 0 15px;
+    line-height: 32px;
+}
+
+.newsflash .a .title .words {
+    float: left;
+    font-size: 14px;
+}
+
+.newsflash .a .title .more {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.newsflash .a .list {
+    padding-left: 15px;
+    height: 130px;
+    padding-top: 10px;
+}
+
+.newsflash .a .list li {
+    margin-bottom: 10px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.newsflash .a .list li .tips {
+    font-weight: bold;
+    color: #888888;
+}
+
+.newsflash .a .list li .words {
+    margin-left: 2px;
+    color: #cccccc;
+}
+
+.newsflash .b {
+    height: 210px;
+    border: 1px #f6f6f6;
+    border-style: none none solid solid;
+    box-sizing: border-box;
+}
+
+.newsflash .b ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.newsflash .b ul li {
+    width: 25%;
+    height: 70px;
+    border: 1px #f6f6f6;
+    border-style: solid solid none none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.newsflash .b ul li .cut {
+    width: 13px;
+    height: 15px;
+    background: url("../imgs/cut.png") no-repeat;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.newsflash .b ul li .pic {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    background: url("../imgs/icons.png") no-repeat;
+}
+
+.newsflash .b ul .a1 .pic {
+    background-position: -16px -16px;
+
+}
+
+.newsflash .b ul .a2 .pic {
+    background-position: -77px -16px;
+}
+
+.newsflash .b ul .a3 .pic {
+    background-position: -140px -16px;
+}
+
+.newsflash .b ul .a4 .pic {
+    background-position: -206px -16px;
+}
+
+.newsflash .b ul .b1 .pic {
+    background-position: -17px -88px;
+}
+
+.newsflash .b ul .b2 .pic {
+    background-position: -77px -88px;
+
+}
+
+.newsflash .b ul .b3 .pic {
+    background-position: -140px -88px;
+
+}
+
+.newsflash .b ul .b4 .pic {
+    background-position: -206px -88px;
+
+}
+
+.newsflash .b ul .c1 .pic {
+    background-position: -17px -159px;
+
+}
+
+.newsflash .b ul .c2 .pic {
+    background-position: -77px -159px;
+
+}
+
+.newsflash .b ul .c3 .pic {
+    background-position: -140px -159px;
+}
+
+.newsflash .b ul .c4 .pic {
+    background-position: -206px -159px;
+
+}
+
+
+.newsflash .c {
+    height: 75px;
+    margin-top: 5px;
+    background-color: #449fdb;
+}
+
+.newsflash .c a {
+    display: block;
+    width: 250px;
+    height: 75px;
+    background: url("../upload/pic1.png") no-repeat;
+}
