@@ -25,6 +25,7 @@ export default class Index extends React.Component {
           <div className="main">
             <div className="focus">
               <ul>
+                {/* 由于我们使用了webpack对静态资源处理的loader, 所以我们可以通过js引入图片 */}
                 <li><a href="#"><img src={require('../upload/img.png')}/></a></li>
               </ul>
               <ol>
