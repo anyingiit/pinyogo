@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/base.css"
+import "../../css/base/base.css"
 import "../../css/commons/nav.css"
 
 export default class Nav extends React.Component {

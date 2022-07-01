@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/base.css"
+import "../../css/base/base.css"
 import "../../css/commons/shortcut.css"
 
 // 顶部导航组件
