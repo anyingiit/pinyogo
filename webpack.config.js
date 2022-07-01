@@ -39,6 +39,11 @@ module.exports = {
         }
       },
       {
+        // 对css文件启用loader, 使其能够在js文件中使用import等语法引入到js文件, 引入后可以直接使用
+        //      使用方法: 直接在相应标签使用className标签属性, 传入字符串, 值为类名
+        //  style-loader 和 css-loader
+        //      css-loader: 作用主要是解析css文件, 引入后会返回css文件的字符串, 并且能够处理css中的@import和url语句，可以处理css-modules，并将结果作为一个js模块返回
+        //      style-loader: 经过css-loader的转译，我们已经得到了完整的css样式代码，style-loader的作用就是将结果以style标签的方式插入DOM树中(注意, 是在运行时动态插入的, 不是在构件时插入的).
         test: /\.css$/,
         use: [
           {
