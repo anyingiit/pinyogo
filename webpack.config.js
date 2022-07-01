@@ -27,14 +27,17 @@ module.exports = {
         use: ["source-map-loader"],
       },
       {
+        // 对.m.js .m.jsx .js .jsx文件匹配并进行处理
         test: /\.m?jsx?$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/,//排除对node_modules目录内文件的处理
         use: {
-          loader: "babel-loader",
-          options: {
-            // @babel/preset-env 处理js文件插件, 能够处理ES6以及更高级语法
-            // @babel/preset-react 处理react相关, 主要是jsx
-            presets: ['@babel/preset-env', "@babel/preset-react"]
+          loader: "babel-loader",// 使用babel对上述文件进行处理
+          options: {// babel具体如何处理呢? 这里进行配置babel处理上述文件的方法
+            plugins: [],// babel插件, 有各种各样的插件, 比如对es6转换为es5的插件, 比如有对jsx处理的插件, 比如有对TypeScript处理的插件
+            presets: ['@babel/preset-env', "@babel/preset-react"] // 可以理解为捆绑包, 捆绑包内有一系列babel插件
+            // 使用的捆绑包(presets)如下:
+            //    @babel/preset-env 处理js文件插件, 能够处理ES6以及更高级语法
+            //    @babel/preset-react 处理react相关, 主要是jsx
           }
         }
       },
