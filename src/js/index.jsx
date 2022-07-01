@@ -260,7 +260,9 @@ export default class Index extends React.Component {
           <div className="goods">
             <ul>
               <li>
-                <div className="pic a"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_01.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
@@ -273,7 +275,9 @@ export default class Index extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="pic b"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_02.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
@@ -286,7 +290,9 @@ export default class Index extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="pic c"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_03.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
@@ -299,7 +305,9 @@ export default class Index extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="pic d"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_04.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
@@ -312,7 +320,9 @@ export default class Index extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="pic e"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_05.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
@@ -325,7 +335,9 @@ export default class Index extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="pic f"></div>
+                <div className="img-box">
+                  <img className="pic a" src="upload/like_06.png"></img>
+                </div>
                 <div className="box">
                     <span className="another-box">
                       <div className="words">
