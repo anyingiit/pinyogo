@@ -6,13 +6,13 @@ const CopyWebpackPlugin = require("copy-webpack-plugin")
 module.exports = {
   entry: path.resolve(__dirname, 'src/js/main.jsx'),
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[hash:8].js'
   },
   mode: "development",
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'docs'),
+      directory: path.resolve(__dirname, 'dist'),
     },
     port: 9000
   },
