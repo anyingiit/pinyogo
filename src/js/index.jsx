@@ -1,121 +1,23 @@
 import React from "react";
 import "../css/base.css"
-import "../css/common.css"
 import "../css/index.css"
+import Shortcut from "./commons/shortcut";
+import Header from "./commons/header";
+import Nav from "./commons/nav";
+import Footer from "./commons/footer";
+
 
 export default class Index extends React.Component {
   render() {
     return (
       <div>
-        {/* 顶部导航开始 */}
-        <div className="shortcut">
-          <div className="w">
-            <ul className="fl">
-              <li className="fl">品优购欢迎您！</li>
-              <li className="fl"><a href="#">请登录</a><a href="#" className="font-red">免费注册</a></li>
-            </ul>
-            <div className="fr">
-              <ul>
-                <li><a href="#">我的订单</a></li>
-                <li className="spacer"></li>
-                <li>
-                  <a href="#">我的品优购</a>
-                  <i className="icon-ctrl1"></i>
-                </li>
-                <li className="spacer"></li>
-                <li><a href="#">品优购会员</a></li>
-                <li className="spacer"></li>
-                <li><a href="#">企业采购</a></li>
-                <li className="spacer"></li>
-                <li>
-                  <a href="#">关注品优购</a>
-                  <i className="icon-ctrl1"></i>
-                </li>
-                <li className="spacer"></li>
-                <li>
-                  <a href="#">客户服务</a>
-                  <i className="icon-ctrl1"></i>
-                </li>
-                <li className="spacer"></li>
-                <li>
-                  <a href="#">网站导航</a>
-                  <div className="icon-ctrl1"></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* 顶部导航结束 */}
-        {/* header开始 */}
-        <div className="header w">
-          {/* logo */}
-          <div className="logo">
-            <h1>
-              <a href="index.html" title="品优购">品优购</a>
-            </h1>
-          </div>
-          {/* search */}
-          <div className="search">
-            <input type="text" placeholder="请搜索"/>
-            <button>搜索</button>
-          </div>
-          {/* hot-words */}
-          <div className="hot-words">
-            <a href="#" className="font-red">优惠购首发</a>
-            <a href="#">亿元优惠</a>
-            <a href="#">9.9元团购</a>
-            <a href="#">每满99减30</a>
-            <a href="#">办公用品</a>
-            <a href="#">电脑</a>
-            <a href="#">通信</a>
-          </div>
-          {/* shopping-card */}
-          <div className="shopping-card">
-            <i className="icon-cart"/>我的购物车<i className="icon-ctrl2"/>
-            <i className="count">8</i>
-          </div>
-        </div>
-        {/* header结束 */}
-        {/* nav开始 */}
-        <div className="nav">
-          <div className="w">
-            <div className="drop-down fl">
-              <div className="dt">全部商品分类</div>
-              <div className="dd">
-                <ul>
-                  <li><a href="#">家用电器</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">手机、数码、通信</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">电脑、办公</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">家居、家具、家装、厨具</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">男装、女装、童装、内衣</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">个户化妆、清洁用品、宠物</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">运动户外、钟表</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">汽车、汽车用品</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">母婴、玩具乐器</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">食品、酒类、生鲜、特产</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">医药保健</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">图书、音像、电子书</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">彩票、旅行、充值、票务</a><i className="icon-ctrl2"></i></li>
-                  <li><a href="#">理财、众筹、白条、保险</a><i className="icon-ctrl2"></i></li>
-                </ul>
-              </div>
-            </div>
-            <div className="nav-items fl">
-              <ul>
-                <li><a href="#">服装城</a></li>
-                <li><a href="#">美妆馆</a></li>
-                <li><a href="#">传智超市</a></li>
-                <li><a href="#">全球购</a></li>
-                <li><a href="#">闪购</a></li>
-                <li><a href="#">团购</a></li>
-                <li><a href="#">拍卖</a></li>
-                <li><a href="#">有趣</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* nav结束 */}
+        {/* 顶部导航 */}
+        <Shortcut/>
+        {/* header */}
+        <Header/>
+        {/* nav */}
+        <Nav/>
+
 
         {/* main */}
         <div className="w">
@@ -526,134 +428,10 @@ export default class Index extends React.Component {
             </div>
           </div>
         </div>
+
+
         {/* footer */}
-        <div className="footer">
-          <div className="w">
-            {/* mod_service */}
-            <div className="mod_service">
-              <li className="a">
-                <div className="left"></div>
-                <div className="right">
-                  <div className="title">正品保障</div>
-                  <div className="words">正品保障，提供发票</div>
-                </div>
-              </li>
-              <li className="b">
-                <div className="left"></div>
-                <div className="right">
-                  <div className="title">正品保障</div>
-                  <div className="words">正品保障，提供发票</div>
-                </div>
-              </li>
-              <li className="c">
-                <div className="left"></div>
-                <div className="right">
-                  <div className="title">正品保障</div>
-                  <div className="words">正品保障，提供发票</div>
-                </div>
-              </li>
-              <li className="d">
-                <div className="left"></div>
-                <div className="right">
-                  <div className="title">正品保障</div>
-                  <div className="words">正品保障，提供发票</div>
-                </div>
-              </li>
-              <li className="e">
-                <div className="left"></div>
-                <div className="right">
-                  <div className="title">正品保障</div>
-                  <div className="words">正品保障，提供发票</div>
-                </div>
-              </li>
-            </div>
-            <div className="line"></div>
-            {/* helps */}
-            <div className="helps">
-              <ul>
-                <li>
-                  <div className="title">购物指南</div>
-                  <div className="words">
-                    <ul>
-                      <li><a href="#">购物流程</a></li>
-                      <li><a href="#">会员介绍</a></li>
-                      <li><a href="#">生活旅行/团购</a></li>
-                      <li><a href="#">常见问题</a></li>
-                      <li><a href="#">大家电</a></li>
-                      <li><a href="#">联系客服</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div className="title">配送方式</div>
-                  <div className="words">
-                    <ul>
-                      <li><a href="#">上门自提</a></li>
-                      <li><a href="#">211限时达</a></li>
-                      <li><a href="#">配送服务查询</a></li>
-                      <li><a href="#">配送费收取标准</a></li>
-                      <li><a href="#">海外配送</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div className="title">支付方式</div>
-                  <div className="words">
-                    <ul>
-                      <li><a href="#">货到付款</a></li>
-                      <li><a href="#">在线支付</a></li>
-                      <li><a href="#">分期付款</a></li>
-                      <li><a href="#">邮局汇款</a></li>
-                      <li><a href="#">公司转账</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div className="title">售后服务</div>
-                  <div className="words">
-                    <ul>
-                      <li><a href="#">售后政策</a></li>
-                      <li><a href="#">价格保护</a></li>
-                      <li><a href="#">退款说明</a></li>
-                      <li><a href="#">返修/退换货</a></li>
-                      <li><a href="#">取消订单</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div className="title">特色服务</div>
-                  <div className="words">
-                    <ul>
-                      <li><a href="#">夺宝岛</a></li>
-                      <li><a href="#">DIY装机</a></li>
-                      <li><a href="#">延保服务</a></li>
-                      <li><a href="#">品优购E卡</a></li>
-                      <li><a href="#">品优购通信</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="qr-code">
-                  <div className="title">帮助中心</div>
-                  <div className="pic">
-                    <img src="imgs/qr-code.png"/>
-                    <div className="smail-title">品优购客户端</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="line"></div>
-            {/* copyright */}
-            <div className="copyright">
-              <div className="line1">关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English
-                Site | Contact U
-              </div>
-              <div className="line2">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
-                zhanghj+itcast.cn<br/>
-                京ICP备08001421号京公网安备110108007702
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer/>
       </div>
     )
   }
