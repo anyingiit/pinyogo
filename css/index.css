@@ -356,8 +356,24 @@
     display: inline;
 }
 
+.guest-you-like .goods ul li .img-box {
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guest-you-like .goods ul li img {
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.guest-you-like .goods ul li img:hover {
+    margin-bottom: 8px;
+}
+
 .guest-you-like .goods .a {
-    background-image: url("../upload/like_01.png");
+    /*background-image: url("../upload/like_01.png");*/
 }
 
 .guest-you-like .goods .b {
@@ -392,7 +408,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .funny {
