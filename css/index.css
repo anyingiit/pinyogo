@@ -506,17 +506,17 @@
     width: 100%;
 }
 
-.funny .container .c .pics .bottom .left {
-    width: 202px;
+.funny .container .c .pics .bottom .left, .funny .container .c .pics .bottom .right {
+    width: 50%;
     height: 100%;
     float: left;
+}
+
+.funny .container .c .pics .bottom .left {
     background: url("../upload/interest05.png") no-repeat;
 }
 
 .funny .container .c .pics .bottom .right {
-    width: 203px;
-    height: 100%;
-    float: left;
     background: url("../upload/interest06.png") no-repeat;
 }
 
@@ -683,3 +683,211 @@
     background: url("../upload/brand14.png") no-repeat;
 
 }
+
+.floors {
+    margin-top: 39px;
+}
+
+.floor {
+    /*height: 390px;*/
+    /*background: #449fdb;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.floor .title {
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px #da646c;
+    border-style: none none solid none;
+}
+
+.floor .title .left {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .title .right {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+.floor .title .right ul li {
+    float: left;
+}
+
+.floor .title .right ul li a {
+    padding: 0 14px;
+    box-sizing: border-box;
+    border: 1px #dddddd;
+    border-style: none solid none none;
+}
+
+.floor .pics {
+    flex-grow: 1;
+    height: 360px;
+}
+
+.floor .pics .pic {
+    height: 100%;
+    float: left;
+}
+
+.floor .pics .pic1 {
+    width: 209px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.floor .pics .pic1 .top {
+    height: 100px;
+}
+
+.floor .pics .pic1 .top ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.floor .pics .pic1 .top ul li {
+    height: calc(100px / 3);
+    width: 50%;
+}
+
+.floor .pics .pic1 .top ul li .box {
+    width: 86px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px #f5f5f5;
+    border-style: none none solid none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floor .pics .pic1 .bottom {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floor .pics .pic1 .bottom .box {
+    background: url("../upload/floor-1-1.png") no-repeat;
+    width: 187px;
+    height: 227px;
+}
+
+
+.floor .pics .pic2 {
+    width: 329px;
+    /*background-color: aquamarine;*/
+    position: relative;
+}
+
+.floor .pics .pic2 .box {
+    background: url("../upload/floor-1-b01.png") no-repeat;
+    width: 329px;
+    height: 360px;
+}
+
+.floor .pics .pic2 .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: calc(-45px / 2);
+}
+
+.floor .pics .pic2 .buttons ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    background: #3e3e3e;
+    margin-right: 5px;
+
+}
+
+.floor .pics .pic2 .buttons ul .select {
+    background-color: white;
+}
+
+.floor .pics .pic3 {
+    width: 220px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px #f9f9f9;
+    border-style: none solid solid none;
+}
+
+.floor .pics .pic3 .top, .floor .pics .pic3 .bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.floor .pics .pic3 .top, .floor .pics .pic5 .top {
+    background: url("../upload/floor-1-5.png") no-repeat;
+}
+
+.floor .pics .pic3 .bottom, .floor .pics .pic5 .bottom {
+    background: url("../upload/floor-1-6.png") no-repeat;
+}
+
+.floor .pics .pic4 {
+    width: 220px;
+    box-sizing: border-box;
+    border: 1px #f9f9f9;
+    border-style: none solid solid none;
+    background: url("../upload/floor-1-4.png") no-repeat;
+}
+
+.floor .pics .pic5 {
+    width: 222px;
+    box-sizing: border-box;
+    border: 1px #f9f9f9;
+    border-style: none none solid none;
+    background-color: white;
+
+}
+
+.floor .pics .pic5 .top, .floor .pics .pic5 .bottom {
+    width: 100%;
+    height: 50%;
+}
+
+
+.floor .icons {
+    margin-top: 20px;
+    height: 65px;
+    background-color: #f7f7f7;
+}
+
+.floor .icons ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.floor .icons ul li {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.floor .icons ul li .box {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px #d4d4d4;
+    border-style: none dashed none none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
