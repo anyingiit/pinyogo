@@ -50,6 +50,8 @@ module.exports = {
         ],
       },
       {
+        // 对png jpg jpeg gif等资源文件启用内置处理规则`asset/resource`, 这样使用require引入此类文件时, webpack能够正确处理并且能够将其打包至输出文件夹
+        // *另外, 对于css文件样式url语法引入图片, css, 字体等资源时, 无需使用任何loader, webpack5自己能够正确的处理并引用
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
