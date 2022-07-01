@@ -751,9 +751,18 @@
     height: 360px;
 }
 
+.floor .pics img {
+    transition: all .2s;
+}
+
+.floor .pics img:hover {
+    margin-left: 8px;
+}
+
 .floor .pics .pic {
     height: 100%;
     float: left;
+    overflow: hidden;
 }
 
 .floor .pics .pic1 {
@@ -798,7 +807,7 @@
 }
 
 .floor .pics .pic1 .bottom .box {
-    background: url("../upload/floor-1-1.png") no-repeat;
+    /*background: url("../upload/floor-1-1.png") no-repeat;*/
     width: 187px;
     height: 227px;
 }
@@ -811,7 +820,7 @@
 }
 
 .floor .pics .pic2 .box {
-    background: url("../upload/floor-1-b01.png") no-repeat;
+    /*background: url("../upload/floor-1-b01.png") no-repeat;*/
     width: 329px;
     height: 360px;
 }
@@ -851,11 +860,11 @@
 }
 
 .floor .pics .pic3 .top, .floor .pics .pic5 .top {
-    background: url("../upload/floor-1-5.png") no-repeat;
+    /*background: url("../upload/floor-1-5.png") no-repeat;*/
 }
 
 .floor .pics .pic3 .bottom, .floor .pics .pic5 .bottom {
-    background: url("../upload/floor-1-6.png") no-repeat;
+    /*background: url("../upload/floor-1-6.png") no-repeat;*/
 }
 
 .floor .pics .pic4 {
@@ -863,7 +872,7 @@
     box-sizing: border-box;
     border: 1px #f9f9f9;
     border-style: none solid solid none;
-    background: url("../upload/floor-1-4.png") no-repeat;
+    /*background: url("../upload/floor-1-4.png") no-repeat;*/
 }
 
 .floor .pics .pic5 {
@@ -872,7 +881,6 @@
     border: 1px #f9f9f9;
     border-style: none none solid none;
     background-color: white;
-
 }
 
 .floor .pics .pic5 .top, .floor .pics .pic5 .bottom {
