@@ -1,4 +1,7 @@
 import React from "react";
+import "../css/base.css"
+import "../css/common.css"
+import "../css/index.css"
 
 export default class Index extends React.Component {
   render() {
