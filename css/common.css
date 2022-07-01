@@ -154,10 +154,12 @@
     line-height: 31px;
     margin-left: 1px;
     padding: 0 12px;
+    transition: all .2s;
 }
 
 .nav .drop-down .dd li:hover {
     background-color: white;
+    padding-left: 20px;
 }
 
 .nav .drop-down .dd li:hover a {
