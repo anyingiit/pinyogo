@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types'
 import "../../css/base/base.css"
 import "../../css/commons/header.css"
-import Logo from "./logo";
+import Logo from "./Logo";
 
 // header
 export default class Header extends React.Component {

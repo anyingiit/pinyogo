@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/base/base.css"
 import "../css/index.css"
-import Shortcut from "./commons/shortcut";
-import Header from "./commons/header";
-import Nav from "./commons/nav";
-import Footer from "./commons/footer";
+import Shortcut from "./commons/Shortcut";
+import Header from "./commons/Header";
+import Nav from "./commons/Nav";
+import Footer from "./commons/Footer";
 
 
 export default class Index extends React.Component {

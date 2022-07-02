@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/base/base.css";
 import "../css/goods_types.css";
-import Shortcut from "./commons/shortcut";
-import Footer from "./commons/footer";
-import Header from "./commons/header";
+import Shortcut from "./commons/Shortcut";
+import Footer from "./commons/Footer";
+import Header from "./commons/Header";
 
-export default class Goods_types extends React.Component {
+export default class GoodsTypes extends React.Component {
   items = (() => {
     const result = []
     for (let i = 0; i < 29; i++) {
