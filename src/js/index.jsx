@@ -38,14 +38,14 @@ export default class Index extends React.Component {
                 <li></li>
                 <li></li>
               </ol>
-              <div className="left"><i className="icon-ctrl"></i></div>
-              <div className="right"><i className="icon-ctrl2"></i></div>
+              <div className="left"><i className="icon-ctrl-left"></i></div>
+              <div className="right"><i className="icon-ctrl-right"></i></div>
             </div>
             <div className="newsflash">
               <div className="a">
                 <div className="title">
                   <div className="words">品优购快报</div>
-                  <div className="more"><p>更多</p><i className="icon-ctrl2"></i></div>
+                  <div className="more"><p>更多</p><i className="icon-ctrl-right"></i></div>
                 </div>
                 <div className="list">
                   <ul>
@@ -158,7 +158,7 @@ export default class Index extends React.Component {
         <div className="guest-you-like w">
           <div className="title">
             <div className="left">猜你喜欢</div>
-            <div className="right">换一批<i className="icon-ctrl"></i></div>
+            <div className="right">换一批<i className="icon-ctrl-left"></i></div>
           </div>
           <div className="goods">
             <ul>

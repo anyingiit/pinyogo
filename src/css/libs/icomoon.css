@@ -55,19 +55,19 @@
     content: "\e96c";
 }
 
-.icon-ctrl:before {
+.icon-ctrl-left:before {
     content: "\ea50";
 }
 
-.icon-ctrl1:before {
+.icon-ctrl-down:before {
     content: "\ea51";
 }
 
-.icon-ctrl2:before {
+.icon-ctrl-right:before {
     content: "\ea52";
 }
 
-.icon-ctrl3:before {
+.icon-ctrl-up:before {
     content: "\ea53";
 }
 

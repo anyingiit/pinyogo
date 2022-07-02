@@ -30,7 +30,7 @@ export default class Header extends React.Component {
         </div>
         {/* shopping-card */}
         <div className="shopping-card">
-          <i className="icon-cart"/>我的购物车<i className="icon-ctrl2"/>
+          <i className="icon-cart"/>我的购物车<i className="icon-ctrl-right"/>
           <i className="count">8</i>
         </div>
       </div>

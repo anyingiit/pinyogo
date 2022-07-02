@@ -18,7 +18,7 @@ export default class Shortcut extends React.Component {
               <li className="spacer"></li>
               <li>
                 <a href="#">我的品优购</a>
-                <i className="icon-ctrl1"></i>
+                <i className="icon-ctrl-down"></i>
               </li>
               <li className="spacer"></li>
               <li><a href="#">品优购会员</a></li>
@@ -27,17 +27,17 @@ export default class Shortcut extends React.Component {
               <li className="spacer"></li>
               <li>
                 <a href="#">关注品优购</a>
-                <i className="icon-ctrl1"></i>
+                <i className="icon-ctrl-down"></i>
               </li>
               <li className="spacer"></li>
               <li>
                 <a href="#">客户服务</a>
-                <i className="icon-ctrl1"></i>
+                <i className="icon-ctrl-down"></i>
               </li>
               <li className="spacer"></li>
               <li>
                 <a href="#">网站导航</a>
-                <div className="icon-ctrl1"></div>
+                <div className="icon-ctrl-down"></div>
               </li>
             </ul>
           </div>
