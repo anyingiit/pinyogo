@@ -19,7 +19,7 @@ export default class Index extends React.Component {
         <Nav/>
 
 
-        {/* TODO: 将所有硬编码的列表替换为数据驱动的视图 */}
+        {/* TODO: 将所有硬编码的列表替换为使用数据遍历得到的列表 */}
         {/* main */}
         <div className="w">
           {/* main */}
