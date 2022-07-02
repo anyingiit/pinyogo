@@ -72,8 +72,8 @@ export default class Goods_types extends React.Component {
                         <div className={`state`}>
                           <span className={`sold-per`}>已售{item.soldPer}%</span>
                           <span className={`progress`}>
-                      <img src={require("../imgs/state_07.png")} alt={`progress_pic`}/>
-                    </span>
+                            <img src={require("../imgs/state_07.png")} alt={`progress_pic`}/>
+                          </span>
                           <span>剩余<span className={`number`}>{item.remain}</span>件</span>
                         </div>
                       </div>
