@@ -4,20 +4,10 @@
     position: relative;
 }
 
-.logo {
-    width: 179px;
-    height: 55px;
-    /*background-color: #c40000;*/
+.Component-Logo {
+    max-height: 55px;
     position: absolute;
     top: 27px;
-}
-
-.logo a {
-    display: block;
-    width: 179px;
-    height: 55px;
-    background: url("../../imgs/logo.png") no-repeat;
-    font-size: 0;
 }
 
 .search {

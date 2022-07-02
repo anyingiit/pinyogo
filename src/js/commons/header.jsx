@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types'
 import "../../css/base/base.css"
 import "../../css/commons/header.css"
+import Logo from "./logo";
 
 // header
 export default class Header extends React.Component {
@@ -9,23 +10,25 @@ export default class Header extends React.Component {
     showLogo: PropTypes.bool,
     showSearch: PropTypes.bool,
     showHotWords: PropTypes.bool,
-    showShoppingCard: PropTypes.bool
+    showShoppingCard: PropTypes.bool,
+    logoSmailTitle: PropTypes.string,
+    logoSmailPic: PropTypes.string
   }
   static defaultProps = {
     showLogo: true,
     showSearch: true,
     showHotWords: true,
-    showShoppingCard: true
+    showShoppingCard: true,
+    logoSmailTitle: undefined,
+    logoSmailPic: undefined
   }
 
   render() {
     return (
       <div className="header w">
         {/* logo */}
-        <div className="logo" style={this.props.showLogo ? {display: 'block'} : {display: 'none'}}>
-          <h1>
-            <a href="index.html" title="品优购">品优购</a>
-          </h1>
+        <div className="Component-Logo" style={this.props.showLogo ? {display: 'block'} : {display: 'none'}}>
+          <Logo smallPic={this.props.logoSmailPic} smallTitle={this.props.logoSmailTitle}/>
         </div>
         {/* search */}
         <div className="search" style={this.props.showSearch ? {display: 'block'} : {display: 'none'}}>

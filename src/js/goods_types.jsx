@@ -27,7 +27,7 @@ export default class Goods_types extends React.Component {
       <div className="goods-types">
         <Shortcut/>
         {/* TODO:增加图标组件的支持 */}
-        <Header/>
+        <Header logoSmailPic={require("../imgs/secKill_03.png")}/>
         <div className="container">
           <div className="nav w">
             <ul className={`list list-left`}>
