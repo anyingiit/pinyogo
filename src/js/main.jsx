@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDom from 'react-dom'
-import Index from './index'
+import Goods_types from "./goods_types";
 
-ReactDom.render(<Index/>, document.getElementById('root'))
+ReactDom.render(<Goods_types/>, document.getElementById('root'))

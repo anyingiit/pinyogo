@@ -63,3 +63,7 @@ button {
 .h100 {
     height: 100%;
 }
+
+.margin-right-none {
+    margin-right: 0;
+}
