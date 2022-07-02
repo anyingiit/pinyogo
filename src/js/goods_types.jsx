@@ -26,6 +26,7 @@ export default class Goods_types extends React.Component {
     return (
       <div className="goods-types">
         <Shortcut/>
+        {/* TODO:增加图标组件的支持 */}
         <Header/>
         <div className="container">
           <div className="nav w">
