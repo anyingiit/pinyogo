@@ -52,12 +52,16 @@
 
 
 .goods-container {
-
+    margin-bottom: 282px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .goods-container .item {
     height: 460px;
-    width: 289px;
+    width: 290px;
     /* font-family: 想要设置的字体, 备选字体; */
     font-family: SimSun, serif;
 }
