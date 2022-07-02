@@ -113,7 +113,7 @@ export default class Footer extends React.Component {
               <li className="qr-code">
                 <div className="title">帮助中心</div>
                 <div className="pic">
-                  <img src={require("../../imgs/qr-code.png")}/>
+                  <img alt={`qr-code`} src={require("../../imgs/qr-code.png")}/>
                   <div className="smail-title">品优购客户端</div>
                 </div>
               </li>

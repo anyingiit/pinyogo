@@ -26,7 +26,7 @@ export default class Index extends React.Component {
             <div className="focus">
               <ul>
                 {/* 由于我们使用了webpack对静态资源处理的loader, 所以我们可以通过js引入图片 */}
-                <li><a href="#"><img src={require('../upload/img.png')}/></a></li>
+                <li><a href="#"><img alt={`focus img`} src={require('../upload/img.png')}/></a></li>
               </ul>
               <ol>
                 <li></li>
@@ -164,7 +164,7 @@ export default class Index extends React.Component {
             <ul>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_01.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_01.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -179,7 +179,7 @@ export default class Index extends React.Component {
               </li>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_02.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_02.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -194,7 +194,7 @@ export default class Index extends React.Component {
               </li>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_03.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_03.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -209,7 +209,7 @@ export default class Index extends React.Component {
               </li>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_04.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_04.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -224,7 +224,7 @@ export default class Index extends React.Component {
               </li>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_05.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_05.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -239,7 +239,7 @@ export default class Index extends React.Component {
               </li>
               <li>
                 <div className="img-box">
-                  <img className="pic a" src={require("../upload/like_06.png")}></img>
+                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_06.png")}></img>
                 </div>
                 <div className="box">
                     <span className="another-box">
@@ -261,23 +261,23 @@ export default class Index extends React.Component {
             <div className="left">传智博客 · 有趣区</div>
           </div>
           <div className="container">
-            <div className="a"><img src={require("../upload/interest01.png")}/></div>
+            <div className="a"><img alt={`interest pic1`} src={require("../upload/interest01.png")}/></div>
             <div className="b">
               <div className="box">好东西</div>
               <div className="pics">
-                <div className="pic1"><img src={require("../upload/interest02.png")}/></div>
+                <div className="pic1"><img alt={`interest pic2`} src={require("../upload/interest02.png")}/></div>
                 {/* TODO: 图有问题, 少1px */}
-                <div className="pic2"><img src={require("../upload/interest03.png")}/></div>
+                <div className="pic2"><img alt={`interest pic3`} src={require("../upload/interest03.png")}/></div>
               </div>
             </div>
             <div className="c">
               <div className="box">品牌街</div>
               <div className="pics">
                 {/* TODO: 图有问题, 少1px */}
-                <div className="top"><img src={require("../upload/interest04.png")}/></div>
+                <div className="top"><img alt={`interest pic4`} src={require("../upload/interest04.png")}/></div>
                 <div className="bottom">
-                  <div className="left"><img src={require("../upload/interest05.png")}/></div>
-                  <div className="right"><img src={require("../upload/interest06.png")}/></div>
+                  <div className="left"><img alt={`interest pic5`} src={require("../upload/interest05.png")}/></div>
+                  <div className="right"><img alt={`interest pic6`} src={require("../upload/interest06.png")}/></div>
                 </div>
               </div>
             </div>
@@ -372,11 +372,11 @@ export default class Index extends React.Component {
                   </ul>
                 </div>
                 <div className="bottom">
-                  <img className="box" src={require("../upload/floor-1-1.png")}></img>
+                  <img className="box" alt={`floor pic`} src={require("../upload/floor-1-1.png")}></img>
                 </div>
               </div>
               <div className="pic pic2">
-                <img className="box" src={require("../upload/floor-1-b01.png")}></img>
+                <img className="box" alt={`floor pic2`} src={require("../upload/floor-1-b01.png")}></img>
                 <div className="buttons">
                   <ul>
                     <li className="select"></li>
@@ -386,44 +386,44 @@ export default class Index extends React.Component {
                 </div>
               </div>
               <div className="pic pic3">
-                <img className="top" src={require("../upload/floor-1-5.png")}></img>
-                <img className="bottom" src={require("../upload/floor-1-6.png")}></img>
+                <img className="top" alt={`floor pic3-top`} src={require("../upload/floor-1-5.png")}></img>
+                <img className="bottom" alt={`floor pic3-bottom`} src={require("../upload/floor-1-6.png")}></img>
               </div>
-              <div className="pic pic4"><img src={require("../upload/floor-1-4.png")}/></div>
+              <div className="pic pic4"><img alt={`floor pic4`} src={require("../upload/floor-1-4.png")}/></div>
               <div className="pic pic5">
-                <div className="top"><img src={require("../upload/floor-1-5.png")}/></div>
-                <div className="bottom"><img src={require("../upload/floor-1-6.png")}/></div>
+                <div className="top"><img alt={`floor pic5 top`} src={require("../upload/floor-1-5.png")}/></div>
+                <div className="bottom"><img alt={`floor pic5 bottom`} src={require("../upload/floor-1-6.png")}/></div>
               </div>
             </div>
 
             <div className="icons">
               <ul>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_03.png")}/></div>
+                  <div className="box"><img alt={`brand1`} src={require("../upload/brand_03.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_05.png")}/></div>
+                  <div className="box"><img alt={`brand2`} src={require("../upload/brand_05.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_07.png")}/></div>
+                  <div className="box"><img alt={`brand3`} src={require("../upload/brand_07.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_09.png")}/></div>
+                  <div className="box"><img alt={`brand4`} src={require("../upload/brand_09.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_11.png")}/></div>
+                  <div className="box"><img alt={`brand5`} src={require("../upload/brand_11.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_13.png")}/></div>
+                  <div className="box"><img alt={`brand6`} src={require("../upload/brand_13.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_09.png")}/></div>
+                  <div className="box"><img alt={`brand7`} src={require("../upload/brand_09.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_03.png")}/></div>
+                  <div className="box"><img alt={`brand8`} src={require("../upload/brand_03.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img src={require("../upload/brand_03.png")}/></div>
+                  <div className="box"><img alt={`brand9`} src={require("../upload/brand_03.png")}/></div>
                 </li>
               </ul>
             </div>
