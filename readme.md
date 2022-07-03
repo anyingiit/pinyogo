@@ -1,3 +1,20 @@
+# 开发和构建
+
+## 开发
+
+```shell
+yarn install
+yarn dev
+yarn test
+```
+
+## 构建
+
+```shell
+yarn install
+yarn build
+```
+
 TODO
 
 - [ ] 编写readme.md
