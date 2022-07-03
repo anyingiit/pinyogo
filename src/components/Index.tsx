@@ -16,7 +16,7 @@ export default class Index extends React.Component {
         {/* header */}
         <Header/>
         {/* nav */}
-        <Nav/>
+        <Nav defaultShowClassifyDetail={true}/>
 
 
         {/* TODO: 将所有硬编码的列表替换为使用数据遍历得到的列表 */}
