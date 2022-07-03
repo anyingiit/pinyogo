@@ -1,6 +1,8 @@
-# 开发和构建
+# 品优购(pinyougo)
 
-## 开发
+## 开发与构建
+
+### 开发
 
 ```shell
 yarn install
@@ -8,7 +10,7 @@ yarn dev
 yarn test
 ```
 
-## 构建
+### 构建
 
 ```shell
 yarn install
@@ -41,7 +43,7 @@ webpack.config.js 配置webpack打包
 yarn.lock yarn保存每个依赖是哪个版本
 ```
 
-TODO
+## TODO
 
 - [ ] 编写readme.md
     - [ ] 主要描述更目录下文件夹是干什么用的
@@ -50,7 +52,9 @@ TODO
 - [ ] 使用css module解决目前css命名冲突问题
 - [ ] [次要] 支持TypeScript
 
-## 关于babel与TypeScript的关系
+## 笔记
+
+### 关于babel与TypeScript的关系
 
 一般来说, 编译和类型检查是同时进行的, 这样也没什么问题, 但是会造成编译非常慢
 为了解决这个问题, 使用了现行方案
@@ -70,7 +74,7 @@ TODO
 
 那么也就是说在webpack.config.js中, 根本无需`ts-loader`, 在遍历流程中, 只需要`babel`即可
 
-## 关于支持TypeScript + React的babel的运行流程
+### 关于支持TypeScript + React的babel的运行流程
 
 1. 解析`.tsx`中所有`jsx`, 并将解析后的代码交给下一个流程
 2. 解析移交代码中的`TypeScript`为`ES6`标准的`JavaScript`, 并将解析后的代码交给下一个流程
