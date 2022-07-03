@@ -45,12 +45,42 @@ yarn.lock yarn保存每个依赖是哪个版本
 
 ## TODO
 
-- [ ] 编写readme.md
-    - [ ] 主要描述更目录下文件夹是干什么用的
+- [ ] 完成所有页面
+    - [x] 01电商-首页
+    - [x] 02电商-分类列表页
+    - [ ] 03电商-产品详情页
+    - [ ] 电商-注册
+    - [ ] 电商-提交订单页
+    - [ ] 电商-登录
+- [x] 项目规范化
+- [ ] `webpack`基础配置
+    - [x] 入口, 出口
+    - [x] 开发服务器
+    - [x] 插件
+        - [x] 清除输出目录
+        - [x] 使用模板构建构建页面容器
+    - [x] 配置支持脚本文件去后缀名`['.js', '.jsx', '.ts', '.tsx']`
+- [x] 支持TypeScript
+    - [x] 使用babel + TypeScript 配置react项目
+        - [x] 配置`tsconfig.json`只检查, 不输出
+        - [x] 配置`webpack`将`.js .jsx .ts .tsx`交给`babel`处理
+        - [x] 配置`babel`
+            - [x] `@babel/preset-react`
+            - [x] `@babel/preset-typescript`
+            - [x] `@babel/preset-env`
+- [ ] `less`/`sass` 二选一
+- [x] `webpack`能够正确的处理静态资源文件
+    - [x] 图片
+    - [x] 字体
+    - [x] `css`
+        - [x] `css-loader`
+        - [x] `style-loader`
+
+- [ ] 编写`readme.md`
+    - [x] 主要描述更目录下文件夹是干什么用的
     - [ ] 描述项目应用了哪些技术, 哪些地方设计的比较好, 例如Logo模块
-    - [ ] [次要] 描述src下文件夹是干什么用的
-- [ ] 使用css module解决目前css命名冲突问题
-- [ ] [次要] 支持TypeScript
+    - [x] [次要] 描述`src`下文件夹是干什么用的
+- [ ] 使用`css module`解决目前`css`命名冲突问题
 
 ## 笔记
 
