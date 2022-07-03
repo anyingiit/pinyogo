@@ -22,13 +22,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?jsx?$/,
+        test: /\.m?js?$/,
         enforce: "pre",
         use: ["source-map-loader"],
       },
       {
         // 对.m.js .m.jsx .js .jsx文件匹配并进行处理
-        test: /\.m?jsx?$/,
+        test: /\.m?([jt])sx?$/,
         exclude: /node_modules/,//排除对node_modules目录内文件的处理
         use: {
           loader: "babel-loader",// 使用babel对上述文件进行处理
