@@ -20,6 +20,14 @@
     "sourceMap": true,
     "jsx": "react",
     // 不输出文件, 只做类型检查(编译和输出后面交给babel了)
-    "noEmit": true
+    "noEmit": true,
+    // 配置用于TypeScript的插件
+    "plugins": [
+      {
+        // typescript-plugin-css-modules 该插件可以在使用css scss sass 等类型的 module模式时, 给出智能提示
+        // 解决了没有智能提示的问题
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   }
 }

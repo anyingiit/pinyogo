@@ -17,7 +17,7 @@ module.exports = {
   },
   target: 'web',
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.module.scss']
   },
   module: {
     rules: [
@@ -51,7 +51,7 @@ module.exports = {
         //  style-loader 和 css-loader
         //      css-loader: 作用主要是解析css文件, 引入后会返回css文件的字符串, 并且能够处理css中的@import和url语句，也可以处理css-modules，并将结果作为一个js模块返回
         //      style-loader: 经过css-loader的转译，我们已经得到了完整的css样式代码，style-loader的作用就是将结果以style标签的方式插入DOM树中(注意, 是在运行时动态插入的, 不是在构件时插入的).
-        test: /\.css$/,
+        test: /^(.*)\.(module\.)?((s[ac])|c)ss$/,
         use: [
           // 对css文件使用如下插件进行处理
           // 对于loader来说, 顺序是是十分重要的, 很多loader的输入实际上就是另一个插件的输出, 另外, 处理的顺序相对于代码的编写顺序的逆序的, 所以我们需要正确的从最终步骤到第一步编写代码
@@ -67,6 +67,17 @@ module.exports = {
           },
           {
             loader: "css-loader",
+          },
+          // 为了解决sass转义完成scss后, 由于sass会将使用@import语句引入的sass直接引入到使用@import语句这个文件, 而其中被引入文件如果包含url(), 并且其路径是相对路径, 即url("../imgs/bg.png")这样的情况, sass没有能力将引入的sass文件中的url替换为正确的路径, 所以需要使用该插件解决这个问题
+          // 该插件一定要在sass-loader之后, 并且在css-loader之前处理
+          {
+            loader: "resolve-url-loader"
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
           }
         ],
       },
