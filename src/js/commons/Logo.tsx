@@ -22,7 +22,7 @@ export default class Logo extends React.Component<Props, any> {
     }
 
     render() {
-        console.log(this.props)
+        // console.log(this.props)
         if (this.props.smallTitle) {
             return (
                 <h1 className={`Logo`}>
