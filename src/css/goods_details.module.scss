@@ -1,0 +1,86 @@
+.breadCrumb {
+  margin-top: 25px;
+}
+
+.main {
+  height: 570px;
+  margin-bottom: 30px;
+
+  .left {
+    width: 400px;
+    height: 100%;
+    float: left;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      width: 100%;
+
+      .mainPic {
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+        border: 1px solid #f9f9f9;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .picSelector {
+        height: 58px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+
+        .targetLeft, .targetRight {
+          height: 100%;
+          width: 51px;
+        }
+
+        .targetLeft {
+          background: #ff9c89;
+        }
+
+        .pics {
+          width: 298px;
+          height: 100%;
+
+          ul {
+            li {
+
+            }
+          }
+        }
+
+        .targetRight {
+          background: #ff9c89;
+        }
+      }
+
+    }
+
+    .bottom {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      .infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #666666;
+      }
+    }
+  }
+
+  .right {
+    margin-left: 80px;
+    width: 720px;
+    height: 100%;
+    float: left;
+  }
+}
