@@ -3,7 +3,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/js/main.jsx'),
+  entry: path.resolve(__dirname, 'src/js/main.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[hash:8].js'
@@ -17,7 +17,7 @@ module.exports = {
   },
   target: 'web',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   module: {
     rules: [
@@ -30,16 +30,19 @@ module.exports = {
         // 对.m.js .m.jsx .js .jsx文件匹配并进行处理
         test: /\.m?([jt])sx?$/,
         exclude: /node_modules/,//排除对node_modules目录内文件的处理
-        use: {
-          loader: "babel-loader",// 使用babel对上述文件进行处理
-          options: {// babel具体如何处理呢? 这里进行配置babel处理上述文件的方法
-            plugins: [],// babel插件, 有各种各样的插件, 比如对es6转换为es5的插件, 比如有对jsx处理的插件, 比如有对TypeScript处理的插件
-            presets: ['@babel/preset-env', "@babel/preset-react"] // 可以理解为捆绑包, 捆绑包内有一系列babel插件
-            // 使用的捆绑包(presets)如下:
-            //    @babel/preset-env 处理js文件插件, 能够处理ES6以及更高级语法
-            //    @babel/preset-react 处理react相关, 主要是jsx
-          }
-        }
+        use: [
+          {
+            loader: "babel-loader",// 使用babel对上述文件进行处理
+            options: {// babel具体如何处理呢? 这里进行配置babel处理上述文件的方法
+              plugins: [],// babel插件, 有各种各样的插件, 比如对es6转换为es5的插件, 比如有对jsx处理的插件, 比如有对TypeScript处理的插件
+              // 可以理解为捆绑包, 捆绑包内有一系列babel插件
+              presets: ['@babel/preset-env', ["@babel/preset-typescript", {sourceMaps: true}], "@babel/preset-react"]// 具体解析流程详见`根目录/readme.md`
+              // 使用的捆绑包(presets)如下:
+              //    @babel/preset-env 处理js文件插件, 能够处理ES6以及更高级语法
+              //    @babel/preset-react 处理react相关, 主要是jsx
+            }
+          },
+        ]
       },
       // 对于css中url处理图像流程和在jsx文件中引入图像的处理过程详见图片 根目录/document/关于webpack对于引入图片和css中url引入图片的处理过程.jpg
       {
