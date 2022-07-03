@@ -20,7 +20,7 @@ yarn build
 ## 目录
 
 ```shell
-docs 存放webpack打包后的可部署文件, 用于GitHub Page展示
+docs 存放webpack打包后的可部署文件, 用于GitHub Page展示 [由dist目录赋值粘贴得来]
 documents 存放项目静态资源库, 页面设计图png以及psd
 scr 项目代码
   components react组件, 内部每一个文件都是一个组件
