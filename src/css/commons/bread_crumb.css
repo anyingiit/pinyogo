@@ -1,0 +1,17 @@
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+}
+
+i {
+    margin: 0 17px;
+}
+
+
+a {
+    cursor: pointer;
+}
