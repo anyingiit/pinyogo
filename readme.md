@@ -15,6 +15,32 @@ yarn install
 yarn build
 ```
 
+## 目录
+
+```shell
+docs 存放webpack打包后的可部署文件, 用于GitHub Page展示
+documents 存放项目静态资源库, 页面设计图png以及psd
+scr 项目代码
+  components react组件, 内部每一个文件都是一个组件
+    commons 通用组件
+    ... 完整页面组件
+  css 存放样式
+    base 所有页面的基础样式, 如全局取消margin设定, 全局通用颜色等
+    commons 通用组件的样式文件
+    ... 根目录文件: 组件样式文件
+  entry 存放用于webpack打包的入口文件 
+  fonts 存放字体
+  imgs 用于存放页面的基础图片, 如背景等
+  template 用于承载react组件的模板页面
+  upload 存放业务相关图片
+.gigignore git忽略提交文件或目录
+package.json npm package的配置文件, 存放了该项目使用了哪些npm模块清单, 项目基本信息, 项目快捷运行脚本
+readme.md 项目帮助文件
+tsconfig.json 配置tsc --watch 检查规则
+webpack.config.js 配置webpack打包
+yarn.lock yarn保存每个依赖是哪个版本
+```
+
 TODO
 
 - [ ] 编写readme.md
