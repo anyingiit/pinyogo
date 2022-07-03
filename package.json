@@ -1,7 +1,7 @@
 {
   "name": "pinyogo",
   "version": "1.0.0",
-  "main": "src/main.js",
+  "main": "src/entry/main.js",
   "repository": "git@github.com:anyingiit/pinyogo.git",
   "author": "anyingiit <anyingiit@gmail.com>",
   "license": "MIT",
