@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/base/base.css"
+import "../css/base/base.scss"
 import style from "../css/goods_details.module.scss"
 import Shortcut from "./commons/Shortcut";
 import Header from "./commons/Header";

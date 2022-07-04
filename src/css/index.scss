@@ -222,7 +222,7 @@
     background: url("../upload/pic1.png") no-repeat;
 }
 
-.good-goods {
+.goodGoods {
     height: 163px;
     display: flex;
     flex-direction: row;
@@ -230,7 +230,7 @@
 }
 
 
-.good-goods .left {
+.goodGoods .left {
     width: 206px;
     height: 100%;
     background-color: #5c5251;
@@ -240,32 +240,32 @@
     justify-content: center;
 }
 
-.good-goods .left .pic {
+.goodGoods .left .pic {
     width: 57px;
     height: 57px;
     background: url("../imgs/clock.png") no-repeat;
 }
 
-.good-goods .left .words {
+.goodGoods .left .words {
     font-weight: normal;
     font-size: 18px;
     color: white;
     margin-top: 10px;
 }
 
-.good-goods .right {
+.goodGoods .right {
     flex-grow: 1;
     display: flex;
     align-items: center;
     background-color: #ebebeb;
 }
 
-.good-goods .right ul {
+.goodGoods .right ul {
     height: 143px;
     width: 100%;
 }
 
-.good-goods .right ul li {
+.goodGoods .right ul li {
     width: 25%;
     height: 100%;
     float: left;
@@ -275,55 +275,55 @@
     background-repeat: no-repeat;
 }
 
-.good-goods .right ul .a {
+.goodGoods .right ul .a {
     background-image: url("../upload/today01.png");
 }
 
-.good-goods .right ul .b {
+.goodGoods .right ul .b {
     background-image: url("../upload/today02.png");
 
 }
 
-.good-goods .right ul .c {
+.goodGoods .right ul .c {
     background-image: url("../upload/today03.png");
 
 }
 
-.good-goods .right ul .d {
+.goodGoods .right ul .d {
     background-image: url("../upload/today04.png");
 
     border: none;
 }
 
 
-.guest-you-like {
+.guestYouLike {
     margin-top: 30px;
     height: 262px;
 }
 
-.guest-you-like .title {
+.guestYouLike .title {
     height: 29px;
 }
 
-.guest-you-like .title .left {
+.guestYouLike .title .left {
     font-size: 18px;
     float: left;
     font-weight: bold;
 }
 
-.guest-you-like .title .right {
+.guestYouLike .title .right {
     float: right;
     padding-top: 3px;
 }
 
 
-.guest-you-like .goods {
+.guestYouLike .goods {
     height: 233px;
     box-sizing: border-box;
     border: 1px solid #f9f9f9;
 }
 
-.guest-you-like .goods ul {
+.guestYouLike .goods ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -331,7 +331,7 @@
     height: 100%;
 }
 
-.guest-you-like .goods li {
+.guestYouLike .goods li {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -339,68 +339,68 @@
     justify-content: center;
 }
 
-.guest-you-like .goods .pic {
+.guestYouLike .goods .pic {
     width: 142px;
     height: 142px;
     background-repeat: no-repeat;
 }
 
-.guest-you-like .goods .words {
+.guestYouLike .goods .words {
     color: #666666;
     display: inline;
 }
 
-.guest-you-like .goods .price {
+.guestYouLike .goods .price {
     color: #df3033;
     font-size: 18px;
     display: inline;
 }
 
-.guest-you-like .goods ul li .img-box {
+.guestYouLike .goods ul li .imgBox {
     height: 163px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.guest-you-like .goods ul li img {
+.guestYouLike .goods ul li img {
     transition: all .2s;
     overflow: hidden;
 }
 
-.guest-you-like .goods ul li img:hover {
+.guestYouLike .goods ul li img:hover {
     margin-bottom: 8px;
 }
 
-.guest-you-like .goods .a {
+.guestYouLike .goods .a {
     /*background-image: url("../upload/like_01.png");*/
 }
 
-.guest-you-like .goods .b {
+.guestYouLike .goods .b {
     background-image: url("../upload/like_02.png");
 }
 
-.guest-you-like .goods .c {
+.guestYouLike .goods .c {
     background-image: url("../upload/like_03.png");
 }
 
-.guest-you-like .goods .d {
+.guestYouLike .goods .d {
     background-image: url("../upload/like_04.png");
 }
 
-.guest-you-like .goods .e {
+.guestYouLike .goods .e {
     background-image: url("../upload/like_05.png");
 }
 
-.guest-you-like .goods .f {
+.guestYouLike .goods .f {
     background-image: url("../upload/like_06.png");
 }
 
-.guest-you-like .goods .f .box {
+.guestYouLike .goods .f .box {
     border: none;
 }
 
-.guest-you-like .box {
+.guestYouLike .box {
     width: 100%;
     box-sizing: border-box;
     border: 1px #f9f9f9;

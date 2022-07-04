@@ -1,6 +1,6 @@
 import React from "react";
-import "../../css/base/base.css"
-import "../../css/commons/nav.css"
+import "../../css/base/base.scss"
+import style from "../../css/commons/nav.module.scss"
 import PropTypes from "prop-types";
 
 interface Props {
@@ -19,7 +19,7 @@ export default class Nav extends React.Component<Props> {
     () => {
       if (this.props.defaultShowClassifyDetail) {
         return (
-          <div className="dd">
+          <div className={style.dd}>
             <ul>
               <li><a href="#">家用电器</a><i className="icon-ctrl-right"></i></li>
               <li><a href="#">手机、数码、通信</a><i className="icon-ctrl-right"></i></li>
@@ -46,13 +46,13 @@ export default class Nav extends React.Component<Props> {
 
   render() {
     return (
-      <div className="nav">
+      <div className={style.nav}>
         <div className="w">
-          <div className="drop-down fl">
-            <div className="dt">全部商品分类</div>
+          <div className={[style.dropDown, 'fl'].join(' ')}>
+            <div className={style.dt}>全部商品分类</div>
             {this.classifyDetail}
           </div>
-          <div className="nav-items fl">
+          <div className={[style.navItems, 'fl'].join(' ')}>
             <ul>
               <li><a href="#">服装城</a></li>
               <li><a href="#">美妆馆</a></li>

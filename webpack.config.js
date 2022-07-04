@@ -17,7 +17,7 @@ module.exports = {
   },
   target: 'web',
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.module.scss']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   module: {
     rules: [
@@ -67,6 +67,11 @@ module.exports = {
           },
           {
             loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: '[path][name]__[local]--[hash:base64:5]'
+              }
+            }
           },
           // 为了解决sass转义完成scss后, 由于sass会将使用@import语句引入的sass直接引入到使用@import语句这个文件, 而其中被引入文件如果包含url(), 并且其路径是相对路径, 即url("../imgs/bg.png")这样的情况, sass没有能力将引入的sass文件中的url替换为正确的路径, 所以需要使用该插件解决这个问题
           // 该插件一定要在sass-loader之后, 并且在css-loader之前处理

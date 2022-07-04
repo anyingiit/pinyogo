@@ -1,57 +1,57 @@
 import React from "react";
-import "../../css/base/base.css"
-import "../../css/commons/footer.css"
+import "../../css/base/base.scss"
+import style from "../../css/commons/footer.scss"
 
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="footer">
+      <div className={style.footer}>
         <div className="w">
           {/* mod_service */}
-          <div className="mod_service">
-            <li className="a">
-              <div className="left"></div>
-              <div className="right">
-                <div className="title">正品保障</div>
-                <div className="words">正品保障，提供发票</div>
+          <div className={style.mod_service}>
+            <li className={style.a}>
+              <div className={style.left}></div>
+              <div className={style.right}>
+                <div className={style.title}>正品保障</div>
+                <div className={style.words}>正品保障，提供发票</div>
               </div>
             </li>
-            <li className="b">
-              <div className="left"></div>
-              <div className="right">
-                <div className="title">正品保障</div>
-                <div className="words">正品保障，提供发票</div>
+            <li className={style.b}>
+              <div className={style.left}></div>
+              <div className={style.right}>
+                <div className={style.title}>正品保障</div>
+                <div className={style.words}>正品保障，提供发票</div>
               </div>
             </li>
-            <li className="c">
-              <div className="left"></div>
-              <div className="right">
-                <div className="title">正品保障</div>
-                <div className="words">正品保障，提供发票</div>
+            <li className={style.c}>
+              <div className={style.left}></div>
+              <div className={style.right}>
+                <div className={style.title}>正品保障</div>
+                <div className={style.words}>正品保障，提供发票</div>
               </div>
             </li>
-            <li className="d">
-              <div className="left"></div>
-              <div className="right">
-                <div className="title">正品保障</div>
-                <div className="words">正品保障，提供发票</div>
+            <li className={style.d}>
+              <div className={style.left}></div>
+              <div className={style.right}>
+                <div className={style.title}>正品保障</div>
+                <div className={style.words}>正品保障，提供发票</div>
               </div>
             </li>
-            <li className="e">
-              <div className="left"></div>
-              <div className="right">
-                <div className="title">正品保障</div>
-                <div className="words">正品保障，提供发票</div>
+            <li className={style.e}>
+              <div className={style.left}></div>
+              <div className={style.right}>
+                <div className={style.title}>正品保障</div>
+                <div className={style.words}>正品保障，提供发票</div>
               </div>
             </li>
           </div>
-          <div className="line"></div>
+          <div className={style.line}></div>
           {/* helps */}
-          <div className="helps">
+          <div className={style.helps}>
             <ul>
               <li>
-                <div className="title">购物指南</div>
-                <div className="words">
+                <div className={style.title}>购物指南</div>
+                <div className={style.words}>
                   <ul>
                     <li><a href="#">购物流程</a></li>
                     <li><a href="#">会员介绍</a></li>
@@ -63,8 +63,8 @@ export default class Footer extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="title">配送方式</div>
-                <div className="words">
+                <div className={style.title}>配送方式</div>
+                <div className={style.words}>
                   <ul>
                     <li><a href="#">上门自提</a></li>
                     <li><a href="#">211限时达</a></li>
@@ -75,8 +75,8 @@ export default class Footer extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="title">支付方式</div>
-                <div className="words">
+                <div className={style.title}>支付方式</div>
+                <div className={style.words}>
                   <ul>
                     <li><a href="#">货到付款</a></li>
                     <li><a href="#">在线支付</a></li>
@@ -87,8 +87,8 @@ export default class Footer extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="title">售后服务</div>
-                <div className="words">
+                <div className={style.title}>售后服务</div>
+                <div className={style.words}>
                   <ul>
                     <li><a href="#">售后政策</a></li>
                     <li><a href="#">价格保护</a></li>
@@ -99,8 +99,8 @@ export default class Footer extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="title">特色服务</div>
-                <div className="words">
+                <div className={style.title}>特色服务</div>
+                <div className={style.words}>
                   <ul>
                     <li><a href="#">夺宝岛</a></li>
                     <li><a href="#">DIY装机</a></li>
@@ -110,22 +110,23 @@ export default class Footer extends React.Component {
                   </ul>
                 </div>
               </li>
-              <li className="qr-code">
-                <div className="title">帮助中心</div>
-                <div className="pic">
+              <li className={style.qrCode}>
+                <div className={style.title}>帮助中心</div>
+                <div className={style.pic}>
                   <img alt={`qr-code`} src={require("../../imgs/qr-code.png")}/>
-                  <div className="smail-title">品优购客户端</div>
+                  <div>品优购客户端</div>
                 </div>
               </li>
             </ul>
           </div>
-          <div className="line"></div>
+          <div className={style.line}></div>
           {/* copyright */}
-          <div className="copyright">
-            <div className="line1">关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English
+          <div className={style.copyright}>
+            <div className={style.line1}>关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 |
+              English
               Site | Contact U
             </div>
-            <div className="line2">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
+            <div className={style.line2}>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
               zhanghj+itcast.cn<br/>
               京ICP备08001421号京公网安备110108007702
             </div>

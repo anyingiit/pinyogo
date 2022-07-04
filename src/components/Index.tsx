@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/base/base.css"
-import "../css/index.css"
+import "../css/base/base.scss"
+import style from "../css/index.scss"
 import Shortcut from "./commons/Shortcut";
 import Header from "./commons/Header";
 import Nav from "./commons/Nav";
@@ -21,17 +21,17 @@ export default class Index extends React.Component {
 
         {/* TODO: 将所有硬编码的列表替换为使用数据遍历得到的列表 */}
         {/* main */}
-        <div className="w">
+        <div className={`w`}>
           {/* main */}
-          <div className="main">
-            <div className="focus">
+          <div className={style.main}>
+            <div className={style.focus}>
               <ul>
                 {/* 由于我们使用了webpack对静态资源处理的loader, 所以我们可以通过js引入图片 */}
                 <li><a href="#"><img alt={`focus img`} src={require('../upload/img.png')}/></a></li>
               </ul>
               <ol>
                 <li></li>
-                <li className="select"></li>
+                <li className={style.select}></li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -39,217 +39,223 @@ export default class Index extends React.Component {
                 <li></li>
                 <li></li>
               </ol>
-              <div className="left"><i className="icon-ctrl-left"></i></div>
-              <div className="right"><i className="icon-ctrl-right"></i></div>
+              <div className={style.left}><i className={`icon-ctrl-left`}></i></div>
+              <div className={style.right}><i className={`icon-ctrl-right`}></i></div>
             </div>
-            <div className="newsflash">
-              <div className="a">
-                <div className="title">
-                  <div className="words">品优购快报</div>
-                  <div className="more"><p>更多</p><i className="icon-ctrl-right"></i></div>
+            <div className={style.newsflash}>
+              <div className={style.a}>
+                <div className={style.title}>
+                  <div className={style.words}>品优购快报</div>
+                  <div className={style.more}><p>更多</p><i className={`icon-ctrl-right`}></i></div>
                 </div>
-                <div className="list">
+                <div className={style.list}>
                   <ul>
                     <li>
                       <a href="#">
-                        <span className="tips">[特惠]</span>
-                        <span className="words">备战开学季 全民低价搬家购数码</span>
+                        <span className={style.tips}>[特惠]</span>
+                        <span className={style.words}>备战开学季 全民低价搬家购数码</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span className="tips">[公告]</span>
-                        <span className="words">备品优稳占家电网购六成份额</span>
+                        <span className={style.tips}>[公告]</span>
+                        <span className={style.words}>备品优稳占家电网购六成份额</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span className="tips">[特惠]</span>
-                        <span className="words">百元中秋全品类礼券限量领</span>
+                        <span className={style.tips}>[特惠]</span>
+                        <span className={style.words}>百元中秋全品类礼券限量领</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span className="tips">[公告]</span>
-                        <span className="words">上品优生鲜 向阳澄湖大闸蟹</span>
+                        <span className={style.tips}>[公告]</span>
+                        <span className={style.words}>上品优生鲜 向阳澄湖大闸蟹</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span className="tips">[特惠]</span>
-                        <span className="words">每次享折扣品优品质游</span>
+                        <span className={style.tips}>[特惠]</span>
+                        <span className={style.words}>每次享折扣品优品质游</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="b">
+              <div className={style.b}>
                 <ul>
-                  <li className="a1">
-                    <div className="pic"></div>
-                    <div className="name">话费</div>
+                  <li className={style.a1}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>话费</div>
                   </li>
-                  <li className="a2">
-                    <div className="pic"></div>
-                    <div className="name">机票</div>
-                    <div className="cut"></div>
+                  <li className={style.a2}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>机票</div>
+                    <div className={style.cut}></div>
                   </li>
-                  <li className="a3">
-                    <div className="pic"></div>
-                    <div className="name">电影票</div>
+                  <li className={style.a3}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>电影票</div>
                   </li>
-                  <li className="a4">
-                    <div className="pic"></div>
-                    <div className="name">游戏</div>
+                  <li className={style.a4}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>游戏</div>
                   </li>
-                  <li className="b1">
-                    <div className="pic"></div>
-                    <div className="name">彩票</div>
+                  <li className={style.b1}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>彩票</div>
                   </li>
-                  <li className="b2">
-                    <div className="pic"></div>
-                    <div className="name">加油卡</div>
+                  <li className={style.b2}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>加油卡</div>
                   </li>
-                  <li className="b3">
-                    <div className="pic"></div>
-                    <div className="name">酒店</div>
+                  <li className={style.b3}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>酒店</div>
                   </li>
-                  <li className="b4">
-                    <div className="pic"></div>
-                    <div className="name">火车票</div>
+                  <li className={style.b4}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>火车票</div>
                   </li>
-                  <li className="c1">
-                    <div className="pic"></div>
-                    <div className="name">众筹</div>
+                  <li className={style.c1}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>众筹</div>
                   </li>
-                  <li className="c2">
-                    <div className="pic"></div>
-                    <div className="name">理财</div>
+                  <li className={style.c2}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>理财</div>
                   </li>
-                  <li className="c3">
-                    <div className="pic"></div>
-                    <div className="name">礼品卡</div>
+                  <li className={style.c3}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>礼品卡</div>
                   </li>
-                  <li className="c4">
-                    <div className="pic"></div>
-                    <div className="name">白条</div>
+                  <li className={style.c4}>
+                    <div className={style.pic}></div>
+                    <div className={style.name}>白条</div>
                   </li>
                 </ul>
               </div>
-              <div className="c"><a href="#"></a></div>
+              <div className={style.c}><a href="#"></a></div>
             </div>
           </div>
         </div>
         {/* good-goods */}
-        <div className="good-goods w">
-          <div className="left">
-            <div className="pic"></div>
-            <h3 className="words">今日推荐</h3>
+        <div className={[style.goodGoods, 'w'].join(' ')}>
+          <div className={style.left}>
+            <div className={style.pic}></div>
+            <h3 className={style.words}>今日推荐</h3>
           </div>
-          <div className="right">
+          <div className={style.right}>
             <ul>
-              <li className="a"></li>
-              <li className="b"></li>
-              <li className="c"></li>
-              <li className="d"></li>
+              <li className={style.a}></li>
+              <li className={style.b}></li>
+              <li className={style.c}></li>
+              <li className={style.d}></li>
             </ul>
           </div>
         </div>
         {/* guest-you-like */}
-        <div className="guest-you-like w">
-          <div className="title">
-            <div className="left">猜你喜欢</div>
-            <div className="right">换一批<i className="icon-ctrl-left"></i></div>
+        <div className={[style.guestYouLike, 'w'].join(' ')}>
+          <div className={style.title}>
+            <div className={style.left}>猜你喜欢</div>
+            <div className={style.right}>换一批<i className={`icon-ctrl-left`}></i></div>
           </div>
-          <div className="goods">
+          <div className={style.goods}>
             <ul>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_01.png")}></img>
+                <div className={style.imgBox}>
+                  <img alt={[style.guestYouLike, style.item, style.pic].join(' ')}
+                       className={[style.pic, style.a].join(' ')} src={require("../upload/like_01.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span>
+                      <div className={style.words}>
                         阳光美包新款单肩包女<br/>
                         包时尚子母包四件套女
                       </div>
                       <br/>
-                      <div className="price">¥116.00</div>
+                      <div className={style.price}>¥116.00</div>
                     </span>
                 </div>
               </li>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_02.png")}></img>
+                <div className={style.imgBox}>
+                  <img className={[style.pic, style.a].join(' ')} alt={`guest-you-like item pic`}
+                       src={require("../upload/like_02.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span>
+                      <div className={style.words}>
                         爱仕达 30CM炒锅不粘<br/>
                         锅NWG8330E电磁炉炒
                       </div>
                       <br/>
-                      <div className="price">¥99.00</div>
+                      <div className={style.price}>¥99.00</div>
                     </span>
                 </div>
               </li>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_03.png")}></img>
+                <div className={style.imgBox}>
+                  <img className={[style.pic, style.a].join(' ')} alt={`guest-you-like item pic`}
+                       src={require("../upload/like_03.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span>
+                      <div className={style.words}>
                         捷波朗<br/>
                         （jabra）BOOSI劲步
                       </div>
                       <br/>
-                      <div className="price">¥245.00</div>
+                      <div className={style.price}>¥245.00</div>
                     </span>
                 </div>
               </li>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_04.png")}></img>
+                <div className={style.imgBox}>
+                  <img className={[style.pic, style.a].join(' ')} alt={`guest-you-like item pic`}
+                       src={require("../upload/like_04.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span>
+                      <div className={style.words}>
                         欧普<br/>
                         JYLZ08面板灯平板灯铝
                       </div>
                       <br/>
-                      <div className="price">¥238.00</div>
+                      <div className={style.price}>¥238.00</div>
                     </span>
                 </div>
               </li>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_05.png")}></img>
+                <div className={style.imgBox}>
+                  <img alt={`guest-you-like item pic`} className={[style.pic, style.a].join(' ')}
+                       src={require("../upload/like_05.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span className={style.anotherBox}>
+                      <div className={style.words}>
                         三星<br/>
                         JYLZ08面板灯平板灯铝
                       </div>
                       <br/>
-                      <div className="price">¥649.00</div>
+                      <div className={style.price}>¥649.00</div>
                     </span>
                 </div>
               </li>
               <li>
-                <div className="img-box">
-                  <img alt={`guest-you-like item pic`} className="pic a" src={require("../upload/like_06.png")}></img>
+                <div className={style.imgBox}>
+                  <img alt={`guest-you-like item pic`} className={[style.pic, style.a].join(' ')}
+                       src={require("../upload/like_06.png")}></img>
                 </div>
-                <div className="box">
-                    <span className="another-box">
-                      <div className="words">
+                <div className={style.box}>
+                    <span>
+                      <div className={style.words}>
                         韩国所望<br/>
                         紧致湿润精华露400ml
                       </div>
                       <br/>
-                      <div className="price">¥649.00</div>
+                      <div className={style.price}>¥649.00</div>
                     </span>
                 </div>
               </li>
@@ -257,87 +263,89 @@ export default class Index extends React.Component {
           </div>
         </div>
         {/* funny */}
-        <div className="funny w">
-          <div className="title">
-            <div className="left">传智博客 · 有趣区</div>
+        <div className={[style.funny, 'w'].join(' ')}>
+          <div className={style.title}>
+            <div className={style.left}>传智博客 · 有趣区</div>
           </div>
-          <div className="container">
-            <div className="a"><img alt={`interest pic1`} src={require("../upload/interest01.png")}/></div>
-            <div className="b">
-              <div className="box">好东西</div>
-              <div className="pics">
-                <div className="pic1"><img alt={`interest pic2`} src={require("../upload/interest02.png")}/></div>
+          <div className={style.container}>
+            <div className={style.a}><img alt={`interest pic1`} src={require("../upload/interest01.png")}/></div>
+            <div className={style.b}>
+              <div className={style.box}>好东西</div>
+              <div className={style.pics}>
+                <div className={style.pic1}><img alt={`interest pic2`} src={require("../upload/interest02.png")}/></div>
                 {/* TODO: 图有问题, 少1px */}
-                <div className="pic2"><img alt={`interest pic3`} src={require("../upload/interest03.png")}/></div>
+                <div className={style.pic2}><img alt={`interest pic3`} src={require("../upload/interest03.png")}/></div>
               </div>
             </div>
-            <div className="c">
-              <div className="box">品牌街</div>
-              <div className="pics">
+            <div className={style.c}>
+              <div className={style.box}>品牌街</div>
+              <div className={style.pics}>
                 {/* TODO: 图有问题, 少1px */}
-                <div className="top"><img alt={`interest pic4`} src={require("../upload/interest04.png")}/></div>
-                <div className="bottom">
-                  <div className="left"><img alt={`interest pic5`} src={require("../upload/interest05.png")}/></div>
-                  <div className="right"><img alt={`interest pic6`} src={require("../upload/interest06.png")}/></div>
+                <div className={style.top}><img alt={`interest pic4`} src={require("../upload/interest04.png")}/></div>
+                <div className={style.bottom}>
+                  <div className={style.left}><img alt={`interest pic5`} src={require("../upload/interest05.png")}/>
+                  </div>
+                  <div className={style.right}><img alt={`interest pic6`} src={require("../upload/interest06.png")}/>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="d">
+            <div className={style.d}>
               <ul>
-                <li className="a">
-                  <div className="pic"></div>
+                <li className={style.a}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="b">
-                  <div className="pic"></div>
+                <li className={style.b}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="c">
-                  <div className="pic"></div>
+                <li className={style.c}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="d">
-                  <div className="pic"></div>
+                <li className={style.d}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="e">
-                  <div className="pic"></div>
+                <li className={style.e}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="f">
-                  <div className="pic"></div>
+                <li className={style.f}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="g">
-                  <div className="pic"></div>
+                <li className={style.g}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="h">
-                  <div className="pic"></div>
+                <li className={style.h}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="i">
-                  <div className="pic"></div>
+                <li className={style.i}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="j">
-                  <div className="pic"></div>
+                <li className={style.j}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="k">
-                  <div className="pic"></div>
+                <li className={style.k}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="l">
-                  <div className="pic"></div>
+                <li className={style.l}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="m">
-                  <div className="pic"></div>
+                <li className={style.m}>
+                  <div className={style.pic}></div>
                 </li>
-                <li className="n">
-                  <div className="pic"></div>
+                <li className={style.n}>
+                  <div className={style.pic}></div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         {/* floors */}
-        <div className="floors w">
-          <div className="floor">
-            <div className="title">
-              <div className="left">家用电器</div>
-              <div className="right">
+        <div className={[style.floors, 'w'].join(' ')}>
+          <div className={style.floor}>
+            <div className={style.title}>
+              <div className={style.left}>家用电器</div>
+              <div className={style.right}>
                 <ul>
-                  <li><a href="#" className="font-red">热门</a></li>
+                  <li><a href="#" className={`font-red`}>热门</a></li>
                   <li><a href="#">大家电</a></li>
                   <li><a href="#">生活电器</a></li>
                   <li><a href="#">厨房电器</a></li>
@@ -348,90 +356,90 @@ export default class Index extends React.Component {
                 </ul>
               </div>
             </div>
-            <div className="pics">
-              <div className="pic pic1">
-                <div className="top">
+            <div className={style.pics}>
+              <div className={[style.pic, style.pic1].join(' ')}>
+                <div className={style.top}>
                   <ul>
                     <li>
-                      <a className="box" href="#">节能减排</a>
+                      <a className={style.box} href="#">节能减排</a>
                     </li>
                     <li>
-                      <a className="box" href="#">4K电视</a>
+                      <a className={style.box} href="#">4K电视</a>
                     </li>
                     <li>
-                      <a className="box" href="#">空气净化器</a>
+                      <a className={style.box} href="#">空气净化器</a>
                     </li>
                     <li>
-                      <a className="box" href="#">IH电饭煲</a>
+                      <a className={style.box} href="#">IH电饭煲</a>
                     </li>
                     <li>
-                      <a className="box" href="#">滚筒洗衣机</a>
+                      <a className={style.box} href="#">滚筒洗衣机</a>
                     </li>
                     <li>
-                      <a className="box" href="#">电热水器</a>
+                      <a className={style.box} href="#">电热水器</a>
                     </li>
                   </ul>
                 </div>
-                <div className="bottom">
-                  <img className="box" alt={`floor pic`} src={require("../upload/floor-1-1.png")}></img>
+                <div className={style.bottom}>
+                  <img className={style.box} alt={`floor pic`} src={require("../upload/floor-1-1.png")}></img>
                 </div>
               </div>
-              <div className="pic pic2">
-                <img className="box" alt={`floor pic2`} src={require("../upload/floor-1-b01.png")}></img>
-                <div className="buttons">
+              <div className={[style.pic, style.pic2].join(' ')}>
+                <img className={style.box} alt={`floor pic2`} src={require("../upload/floor-1-b01.png")}></img>
+                <div className={style.buttons}>
                   <ul>
-                    <li className="select"></li>
+                    <li className={style.select}></li>
                     <li></li>
                     <li></li>
                   </ul>
                 </div>
               </div>
-              <div className="pic pic3">
-                <img className="top" alt={`floor pic3-top`} src={require("../upload/floor-1-5.png")}></img>
-                <img className="bottom" alt={`floor pic3-bottom`} src={require("../upload/floor-1-6.png")}></img>
+              <div className={[style.pic, style.pic3].join(' ')}>
+                <img className={style.top} alt={`floor pic3-top`} src={require("../upload/floor-1-5.png")}></img>
+                <img className={style.bottom} alt={`floor pic3-bottom`} src={require("../upload/floor-1-6.png")}></img>
               </div>
-              <div className="pic pic4"><img alt={`floor pic4`} src={require("../upload/floor-1-4.png")}/></div>
-              <div className="pic pic5">
-                <div className="top"><img alt={`floor pic5 top`} src={require("../upload/floor-1-5.png")}/></div>
-                <div className="bottom"><img alt={`floor pic5 bottom`} src={require("../upload/floor-1-6.png")}/></div>
+              <div className={[style.pic, style.pic4].join(' ')}><img alt={`floor pic4`}
+                                                                      src={require("../upload/floor-1-4.png")}/></div>
+              <div className={[style.pic, style.pic5].join(' ')}>
+                <div className={style.top}><img alt={`floor pic5 top`} src={require("../upload/floor-1-5.png")}/></div>
+                <div className={style.bottom}><img alt={`floor pic5 bottom`} src={require("../upload/floor-1-6.png")}/>
+                </div>
               </div>
             </div>
 
-            <div className="icons">
+            <div className={style.icons}>
               <ul>
                 <li>
-                  <div className="box"><img alt={`brand1`} src={require("../upload/brand_03.png")}/></div>
+                  <div className={style.box}><img alt={`brand1`} src={require("../upload/brand_03.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand2`} src={require("../upload/brand_05.png")}/></div>
+                  <div className={style.box}><img alt={`brand2`} src={require("../upload/brand_05.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand3`} src={require("../upload/brand_07.png")}/></div>
+                  <div className={style.box}><img alt={`brand3`} src={require("../upload/brand_07.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand4`} src={require("../upload/brand_09.png")}/></div>
+                  <div className={style.box}><img alt={`brand4`} src={require("../upload/brand_09.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand5`} src={require("../upload/brand_11.png")}/></div>
+                  <div className={style.box}><img alt={`brand5`} src={require("../upload/brand_11.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand6`} src={require("../upload/brand_13.png")}/></div>
+                  <div className={style.box}><img alt={`brand6`} src={require("../upload/brand_13.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand7`} src={require("../upload/brand_09.png")}/></div>
+                  <div className={style.box}><img alt={`brand7`} src={require("../upload/brand_09.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand8`} src={require("../upload/brand_03.png")}/></div>
+                  <div className={style.box}><img alt={`brand8`} src={require("../upload/brand_03.png")}/></div>
                 </li>
                 <li>
-                  <div className="box"><img alt={`brand9`} src={require("../upload/brand_03.png")}/></div>
+                  <div className={style.box}><img alt={`brand9`} src={require("../upload/brand_03.png")}/></div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-
         {/* footer */}
         <Footer/>
       </div>

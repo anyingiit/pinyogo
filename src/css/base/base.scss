@@ -1,0 +1,75 @@
+/* 基本样式 */
+
+// 由于未知的原因, @font-face文字声明和其相关类不能同时被引入到:global{}, 所以分开引入
+@use "../fonts/fonts.scss";
+
+:global {
+  @import "../fonts/icomoon.scss";
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  ul, li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  a:hover {
+    color: #c40000;
+  }
+
+  input {
+    outline: none;
+  }
+
+  button {
+    border: 0;
+  }
+
+  .font-red {
+    color: #c40000;
+  }
+
+  .font-black {
+    color: black;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .h100 {
+    height: 100%;
+  }
+
+  .margin-right-none {
+    margin-right: 0;
+  }
+}

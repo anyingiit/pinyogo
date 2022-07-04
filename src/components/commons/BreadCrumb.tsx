@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../css/base/base.css"
-import "../../css/commons/bread_crumb.css"
+import "../../css/base/base.scss"
+import "../../css/commons/bread_crumb.scss"
 
 interface Props {
   list: {

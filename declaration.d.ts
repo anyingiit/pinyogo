@@ -2,12 +2,12 @@
 // 该文件的作用就是定义TypeScript内建规则不包括的文件类型, 以及定义引入他们时候的类型
 declare module '*.scss';
 declare module '*.scss' {
-  const content: Record<string, string>;
+  const content: Record<string, undefined>;
   export default content;
 }
 
 declare module '*.sass';
 declare module '*.scss' {
-  const content: Record<string, string>;
+  const content: Record<string, undefined>;
   export default content;
 }
