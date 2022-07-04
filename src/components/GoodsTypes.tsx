@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/base/base.scss";
-import style from "../css/goods_types.scss";
+import style from "../css/goods_types.module.scss";
 import Shortcut from "./commons/Shortcut";
 import Footer from "./commons/Footer";
 import Header from "./commons/Header";
@@ -27,14 +27,14 @@ export default class GoodsTypes extends React.Component {
       <div>
         <Shortcut/>
         <Header logoSmailPic={require("../imgs/secKill_03.png")}/>
-        <div className={style.container}>
+        <div>
           <div className={[style.nav, 'w'].join(' ')}>
-            <ul className={[style.list, style.listLeft].join(' ')}>
+            <ul className={[style.listLeft].join(' ')}>
               <li><a href="#"><h3>品质秒杀</h3></a></li>
               <li><a href="#"><h3>即将售罄</h3></a></li>
               <li><a href="#"><h3>超值低价</h3></a></li>
             </ul>
-            <ul className={[style.list, style.listRight].join(' ')}>
+            <ul className={[style.listRight].join(' ')}>
               <li><a href="#"><p>女装</p></a></li>
               <li><a href="#" className={style.select}><p>女鞋</p></a></li>
               <li><a href="#"><p>男装</p></a></li>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/base/base.scss"
-import style from "../css/index.scss"
+import style from "../css/index.module.scss"
 import Shortcut from "./commons/Shortcut";
 import Header from "./commons/Header";
 import Nav from "./commons/Nav";
@@ -87,52 +87,52 @@ export default class Index extends React.Component {
                 <ul>
                   <li className={style.a1}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>话费</div>
+                    <div>话费</div>
                   </li>
                   <li className={style.a2}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>机票</div>
+                    <div>机票</div>
                     <div className={style.cut}></div>
                   </li>
                   <li className={style.a3}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>电影票</div>
+                    <div>电影票</div>
                   </li>
                   <li className={style.a4}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>游戏</div>
+                    <div>游戏</div>
                   </li>
                   <li className={style.b1}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>彩票</div>
+                    <div>彩票</div>
                   </li>
                   <li className={style.b2}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>加油卡</div>
+                    <div>加油卡</div>
                   </li>
                   <li className={style.b3}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>酒店</div>
+                    <div>酒店</div>
                   </li>
                   <li className={style.b4}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>火车票</div>
+                    <div>火车票</div>
                   </li>
                   <li className={style.c1}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>众筹</div>
+                    <div>众筹</div>
                   </li>
                   <li className={style.c2}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>理财</div>
+                    <div>理财</div>
                   </li>
                   <li className={style.c3}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>礼品卡</div>
+                    <div>礼品卡</div>
                   </li>
                   <li className={style.c4}>
                     <div className={style.pic}></div>
-                    <div className={style.name}>白条</div>
+                    <div>白条</div>
                   </li>
                 </ul>
               </div>
@@ -165,7 +165,7 @@ export default class Index extends React.Component {
             <ul>
               <li>
                 <div className={style.imgBox}>
-                  <img alt={[style.guestYouLike, style.item, style.pic].join(' ')}
+                  <img alt={[style.guestYouLike, style.pic].join(' ')}
                        className={[style.pic, style.a].join(' ')} src={require("../upload/like_01.png")}></img>
                 </div>
                 <div className={style.box}>
@@ -233,7 +233,7 @@ export default class Index extends React.Component {
                        src={require("../upload/like_05.png")}></img>
                 </div>
                 <div className={style.box}>
-                    <span className={style.anotherBox}>
+                    <span>
                       <div className={style.words}>
                         三星<br/>
                         JYLZ08面板灯平板灯铝
