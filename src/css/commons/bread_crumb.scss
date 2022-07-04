@@ -1,17 +1,19 @@
-ul {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-}
+.container{
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-li {
-}
+    li {
+    }
 
-i {
-    margin: 0 17px;
-}
+    i {
+        margin: 0 17px;
+    }
 
 
-a {
-    cursor: pointer;
+    a {
+        cursor: pointer;
+    }
 }

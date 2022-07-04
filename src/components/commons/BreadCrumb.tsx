@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../../css/base/base.scss"
-import "../../css/commons/bread_crumb.scss"
+import style from "../../css/commons/bread_crumb.scss"
 
 interface Props {
   list: {
@@ -37,23 +37,25 @@ export default class BreadCrumb extends React.Component<Props> {
 
   render() {
     return (
-      <ul>
-        {
-          this.props.list.map((item, index, array) => {
-            const iconRight = (() => {
-              if (index != array.length - 1) {
-                return <i className={`icon-ctrl-left`}></i>
-              }
-            })()
-            return (
-              <li key={index}>
-                <a href={`${item.href}`}><span>{item.value}</span></a>
-                {iconRight}
-              </li>
-            )
-          })
-        }
-      </ul>
+      <span className={style.container}>
+        <ul>
+            {
+              this.props.list.map((item, index, array) => {
+                const iconRight = (() => {
+                  if (index != array.length - 1) {
+                    return <i className={`icon-ctrl-left`}></i>
+                  }
+                })()
+                return (
+                  <li key={index}>
+                    <a href={`${item.href}`}><span>{item.value}</span></a>
+                    {iconRight}
+                  </li>
+                )
+              })
+            }
+        </ul>
+      </span>
     )
   }
 }

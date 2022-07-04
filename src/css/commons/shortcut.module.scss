@@ -1,27 +1,26 @@
-
 .shortcut {
-    height: 31px;
-    width: 100%;
-    line-height: 31px;
-    font-size: 12px;
-    background-color: #f1f1f1;
+  height: 31px;
+  width: 100%;
+  line-height: 31px;
+  font-size: 12px;
+  background-color: #f1f1f1;
 }
 
 .shortcut li {
-    float: left;
-    display: inline-flex;
-    align-items: center;
+  float: left;
+  display: inline-flex;
+  align-items: center;
 }
 
-.shortcut li .icon-ctrl-down {
-    font-size: 16px;
-    margin-left: 8px;
+.shortcut li :global(.icon-ctrl-down) {
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .spacer {
-    width: 1px;
-    height: 12px;
-    margin: 9px 12px 0 12px;
-    background-color: #666666;
+  width: 1px;
+  height: 12px;
+  margin: 9px 12px 0 12px;
+  background-color: #666666;
 }
 
