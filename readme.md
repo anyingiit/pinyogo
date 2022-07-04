@@ -53,7 +53,7 @@ yarn.lock yarn保存每个依赖是哪个版本
     - [ ] 电商-提交订单页
     - [ ] 电商-登录
 - [x] 项目规范化
-- [ ] `webpack`基础配置
+- [x] `webpack`基础配置
     - [x] 入口, 出口
     - [x] 开发服务器
     - [x] 插件
@@ -68,14 +68,21 @@ yarn.lock yarn保存每个依赖是哪个版本
             - [x] `@babel/preset-react`
             - [x] `@babel/preset-typescript`
             - [x] `@babel/preset-env`
-- [ ] `less`/`sass` 二选一
+- [x] `less`/`sass` 二选一
+    - [x] sass
+        - [x] `sass module`
+            - [x] 让所有文件都使用`sass module`
+            - [ ] review 所有样式文件文件, 使其使用sass特性
+                - [x] `index.module.scss`
+                - [ ] ...
+        - [x] 解决sass引用其他样式文件时, 被引用文件的`url()`无法正确处理的问题
+        - [x] 解决字体声明和字体相关类不能全部使用`:global()`的问题
 - [x] `webpack`能够正确的处理静态资源文件
     - [x] 图片
     - [x] 字体
     - [x] `css`
         - [x] `css-loader`
         - [x] `style-loader`
-
 - [ ] 编写`readme.md`
     - [x] 主要描述更目录下文件夹是干什么用的
     - [ ] 描述项目应用了哪些技术, 哪些地方设计的比较好, 例如Logo模块
